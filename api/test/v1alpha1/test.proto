@@ -1,0 +1,34 @@
+syntax = "proto3";
+
+package envoymp.api.v1alpha1.test;
+
+import "google/api/annotations.proto";
+import "protoc-gen-swagger/options/annotations.proto";
+
+
+service TestAPI {
+    option (grpc.gateway.protoc_gen_swagger.options.openapiv2_tag) = {
+		description: "Testing service descriptions."
+		external_docs: {
+			url: "https://github.com/envoyproxy/management-plane-api";
+			description: "More details";
+		}
+	};
+
+
+    rpc GetExample(GetExampleRequest) returns (GetExampleResponse) {
+        option (google.api.http) = {
+            post : "/v1alpha1/test/getExample"
+            body : "*"
+        };
+    }
+}
+
+message GetExampleRequest {
+    // This is an example of a doc comment.
+    repeated string names = 1;
+}
+
+message GetExampleResponse {
+
+}
