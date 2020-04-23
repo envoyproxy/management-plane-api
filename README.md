@@ -12,3 +12,14 @@ For an example of all of the functionality that `grpc-gateway` offers in combina
 - Define protos in the `api/` folder.
 - `make` to validate the definition and generate the Swagger specification.
 - `make view` to see documentation in the browser for the Swagger.
+
+# Dependencies
+This project requires the following dependencies.
+- realpath
+- go
+
+## MacOS
+To install the required dependencies, run:
+`brew install coreutils`
+`brew install go`
+
