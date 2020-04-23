@@ -12,6 +12,6 @@ proto:
 
 .PHONY: view
 view:
-	bin/swagger serve api/test/v1alpha1/pb.swagger.yaml
+	build/bin/swagger serve api/test/v1alpha1/pb.swagger.yaml
 
 # TODO: lint, lint-fix
