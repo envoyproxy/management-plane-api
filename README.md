@@ -1,7 +1,13 @@
 # Management Plane API
 The Management Plane API (MPA) Working Group will allow the Envoy community to collaborate on the development of higher-level features, which can be defined as additional functionality not pertaining to normal control and data plane operations.
 
-To discuss further, join Envoy Slack [per the instructions](https://github.com/envoyproxy/envoy#contact) in the Envoy repo, and join channel `#management-plane-api`.
+## Community
+
+### Slack
+Join Envoy Slack [per the instructions](https://github.com/envoyproxy/envoy#contact) in the Envoy repo, and join channel `#management-plane-api`.
+
+### Meetings
+A summary is available on the [Wiki](https://github.com/envoyproxy/management-plane-api/wiki) of past and current meetings and work items.
 
 # API Definitions
 MPA definitions will be in `proto3` format. Since the APIs may be accessed from clients without native support for gRPC (e.g. browsers), we will use [grpc-ecosystem/grpc-gateway](https://github.com/grpc-ecosystem/grpc-gateway) to generate JSON endpoints that can be used in addition to gRPC. protoc-gen-swagger from the grpc-gateway project will also be used to generate Swagger files, which provide code-gen and documentation for clients that wish to use JSON endpoints.
